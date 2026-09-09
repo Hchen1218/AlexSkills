@@ -32,14 +32,19 @@ description: |
   - /dbs-agent-migration、/agent迁移、「迁移到 Codex」「迁移到 Claude Code」「迁移到 Grok」「统一 AGENTS.md」「整理 skill bridge」「我的 Agent 工作台很乱」「帮我统一 Claude 和 Codex 和 Grok」
   - /dbs-chatroom-austrian、/chatroom-austrian、/奥派、「奥派聊天室」
   - /dbs-script-flow、/逻辑延续、「检查逻辑延续」「看看逻辑有没有断」「帮我看看这个稿子顺不顺」
+  - /dbs-theory-grounding、/理论溯源、「这个说法有什么理论依据」「帮我找理论支撑」
+  - /dbs-video-extract、/视频提取、「提取视频文案」「下载视频字幕」
   - /dbs-update、/升级dbskill、「更新 dbskill」「把 dbskill 更新到最新版」「检查 dbskill 更新」
   - /dbs-knowledge、/知识库、「搭建知识库」「更新知识库导航」「从知识库找资料」
   - /dbs-skill-cleaner、/清理 skill、/检查 skill、「扫描本地 skill」「审查我的 skill」
   上游内部模块规则同步为 references/*.md，根入口仍是本地唯一入口包装，不把内部模块注册成独立 Skill。
 metadata:
-  github_url: https://github.com/dontbesilent2025/dbskill
-  github_hash: c331c4e8893a5d19e10a7b674a5c7485ebf170a6
-  version: "2.18.31"
+  tracking: github
+  source:
+    github_url: https://github.com/dontbesilent2025/dbskill
+    github_hash: 8b8e33f1ecaed8cee606fe950c4426b525ead314
+    github_ref: main
+    version: "2.18.40"
   created_at: 2026-04-07T00:00:00+08:00
   entry_point: SKILL.md
   dependencies: []
@@ -63,7 +68,7 @@ metadata:
 在判断模式和路由之前，定位本 Skill 所在目录并执行版本检查；无输出、失败或超时都不影响正常路由：
 
 ```bash
-DBS_LOCAL_VERSION="2.18.31"; bash "<本 SKILL.md 所在目录>/scripts/check-update.sh" "$DBS_LOCAL_VERSION"
+DBS_LOCAL_VERSION="2.18.40"; bash "<本 SKILL.md 所在目录>/scripts/check-update.sh" "$DBS_LOCAL_VERSION"
 ```
 
 ## 任务复杂度
@@ -118,6 +123,8 @@ DBS_LOCAL_VERSION="2.18.31"; bash "<本 SKILL.md 所在目录>/scripts/check-upd
 | 想检查、审查或清理本地 skill；担心广告导流、任务劫持、可疑外部调用或敏感数据读取 | `/dbs-skill-cleaner` | 先出带证据的只读审查报告，再按用户确认隔离问题 skill |
 | 明确提到 Claude Code、Codex、Grok、AGENTS.md、CLAUDE.md、skill bridge、工作台迁移、三端统一，或说"我的 Agent 工作台很乱"、"帮我统一 Claude 和 Codex 和 Grok" | `/dbs-agent-migration` | Agent 工作台迁移，整理规则文件、真源、命名与三端 bridge |
 | 有逐字稿想检查段落衔接、信息密度、口播流畅度，或说"稿子顺不顺"、"哪里会划走" | `/dbs-script-flow` | 逻辑延续检查，找出观众划走的风险点 |
+| 想核查观点、方法或主张的理论来源，或说"有什么理论依据"、"帮我找理论支撑" | `/dbs-theory-grounding` | 为主张建立可核查的理论依据、适用边界与证据链 |
+| 想从公开视频提取字幕、文案或元数据，或说"提取视频文案"、"下载视频字幕" | `/dbs-video-extract` | 按官方模块配置 API，并提取视频信息与转写文本 |
 | 想把这次诊断的关键状态留下来、说「保存」「记下来」「存档」「这个结论留着」 | `/dbs-save` | 把当前诊断状态写到本地，下次可恢复 |
 | 想接续上次的诊断、说「上次」「之前的」「接着」「续上」「上次诊断到哪了」 | `/dbs-restore` | 拉出最近一份存档，接着上次继续 |
 | 想出一份可分享的报告、说「出报告」「打包」「整理一份」「给合伙人看的」 | `/dbs-report` | 把多份存档合并成 markdown 报告 |
@@ -156,6 +163,8 @@ DBS_LOCAL_VERSION="2.18.31"; bash "<本 SKILL.md 所在目录>/scripts/check-upd
 21. JTBD 任务澄清
 22. Skill 安装与同步
 23. Skill 制作与验证
+24. 理论溯源
+25. 视频文案提取
 
 ### 内部文件映射
 
@@ -164,31 +173,33 @@ DBS_LOCAL_VERSION="2.18.31"; bash "<本 SKILL.md 所在目录>/scripts/check-upd
 - `/dbs-standard-answer` -> `references/dbs-standard-answer.md`
 - `/dbs-content` -> `references/dbs-content.md`
 - `/dbs-content-risk-check` -> `references/dbs-content-risk-check.md`
-- `/dbs-install-skill` -> `references/dbs-install-skill/SKILL.md`
+- `/dbs-install-skill` -> `references/dbs-install-skill/WORKFLOW.md`
 - `/dbs-spread` -> `references/dbs-spread.md`
 - `/dbs-resonate` -> `references/dbs-resonate.md`
 - `/dbs-hook` -> `references/dbs-hook.md`
 - `/dbs-xhs-title` -> `references/dbs-xhs-title.md`
 - `/dbs-ai-check` -> `references/dbs-ai-check.md`
-  - `/dbs-slowisfast` -> `references/dbs-slowisfast.md`
+- `/dbs-slowisfast` -> `references/dbs-slowisfast.md`
 - `/dbs-action` -> `references/dbs-action.md`
 - `/dbs-deconstruct` -> `references/dbs-deconstruct.md`
 - `/dbs-goal` -> `references/dbs-goal.md`
 - `/dbs-good-question` -> `references/dbs-good-question.md`
 - `/dbs-jtbd` -> `references/dbs-jtbd.md`
-- `/dbs-skill-maker` -> `references/dbs-skill-maker/SKILL.md`
+- `/dbs-skill-maker` -> `references/dbs-skill-maker/WORKFLOW.md`
 - `/dbs-decision` -> `references/dbs-decision.md`
-  - `/dbs-learning` -> `references/dbs-learning.md`
+- `/dbs-learning` -> `references/dbs-learning.md`
 - `/dbs-save` -> `references/dbs-save.md`
 - `/dbs-restore` -> `references/dbs-restore.md`
 - `/dbs-report` -> `references/dbs-report.md`
 - `/dbs-agent-migration` -> `references/dbs-agent-migration.md`
 - `/dbs-script-flow` -> `references/dbs-script-flow.md`
-  - `/dbs-chatroom-austrian` -> `references/dbs-chatroom-austrian.md`
-  - `/chatroom-austrian` -> `references/chatroom-austrian.md`
-  - `/dbs-update` -> `references/dbs-update.md`
-  - `/dbs-knowledge` -> `references/dbs-knowledge.md`
-  - `/dbs-skill-cleaner` -> `references/dbs-skill-cleaner.md`
+- `/dbs-theory-grounding` -> `references/dbs-theory-grounding.md`
+- `/dbs-video-extract` -> `references/dbs-video-extract/WORKFLOW.md`
+- `/dbs-chatroom-austrian` -> `references/dbs-chatroom-austrian.md`
+- `/chatroom-austrian` -> `references/chatroom-austrian.md`
+- `/dbs-update` -> `references/dbs-update.md`
+- `/dbs-knowledge` -> `references/dbs-knowledge.md`
+- `/dbs-skill-cleaner` -> `references/dbs-skill-cleaner.md`
 
 如果某个参考文件引用了额外脚本或资源，按该文件中记录的 `references/` 相对路径解析。
 

@@ -1,6 +1,12 @@
 ---
 name: douyin-focus-shuttle
 description: Lightweight focus shuttle for when the user wants to wait in Douyin while the agent works, then be brought back when the agent needs input or is done. Trigger for requests like "让我去刷抖音", "开始任务时切到抖音", "做完叫我回来", "等的时候去抖音", or "别新开抖音页面". Reuses one Douyin recommendation tab and avoids account actions.
+metadata:
+  tracking: local-only
+  source:
+    kind: workspace
+    repository_url: https://github.com/Hchen1218/viral-content-breakdown
+    source_path: douyin-focus-shuttle
 ---
 
 # Douyin Focus Shuttle

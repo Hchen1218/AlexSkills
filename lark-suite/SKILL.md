@@ -1,6 +1,12 @@
 ---
 name: lark-suite
 description: Single entrypoint for all Feishu/Lark work through the official CLI and MCP. Use for cloud documents, Wiki, Drive, Sheets, Base/Bitable, Slides, Markdown, whiteboards, messages, calendar, tasks, meetings, mail, approvals, attendance, OKR, apps, contacts, events, permissions, search, and authentication. Replaces exposing individual lark-* skills.
+metadata:
+  tracking: local-only
+  source:
+    kind: workspace
+    repository_url: https://github.com/Hchen1218/viral-content-breakdown
+    source_path: lark-suite
 ---
 
 # Lark Suite

@@ -5,7 +5,7 @@ description: 更新官方 dbskill，并保留其他 Skill 与用户存档。用�
 
 # dbs-update：更新 dbskill 单入口
 
-当前上游版本：`2.18.31`。
+当前上游版本：`2.18.40`。
 
 用户已经明确要求更新 dbskill，或在上一条 dbskill 更新提醒后回复了 `1`。两种情况都直接执行更新，不再做第二次文字确认；宿主若要求 Shell 权限，由用户在宿主的权限窗口中决定。
 
@@ -24,7 +24,7 @@ description: 更新官方 dbskill，并保留其他 Skill 与用户存档。用�
 
 1. 不要运行任何会把上游全部模块注册成独立 Skill 的全量安装命令。
 
-2. 应将官方 `skills/dbs/SKILL.md` 和需要的 `dbs-*/SKILL.md` 同步到本目录的 `references/`，再更新根入口的版本哈希与路由；不要创建新的顶层 Skill 目录。
+2. 应将官方 `skills/dbs/SKILL.md` 保存为 `references/upstream-dbs.md`，并把需要的 `dbs-*/SKILL.md` 保存为内部 `.md` 或 `WORKFLOW.md`；不得在 `references/` 中保留额外的 `SKILL.md`，否则会被宿主递归识别成公开入口。
 
 3. 保留本机包装层的单入口约束，并排除不需要的 `dbs-bridge`、`dbs-content-system`、`dbs-wechat-html`。
 

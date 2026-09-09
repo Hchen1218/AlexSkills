@@ -10,12 +10,10 @@
   "sourceOfTruth": {
     "skillhub": [],
     "codex": [
-      "agent-browser",
       "aihot",
       "beautiful-html-templates",
       "anthropic-skill-creator",
       "dbskill",
-      "doc",
       "eva",
       "frontend-design",
       "frontend-slides",
@@ -28,9 +26,7 @@
       "playwright-interactive",
       "screenshot",
       "skill-manager",
-      "slides",
       "speech",
-      "spreadsheet",
       "token-receipt",
       "transcribe",
       "vercel-deploy",
@@ -48,12 +44,10 @@
   },
   "directEntries": {
     "codex": [
-      "agent-browser",
       "aihot",
       "beautiful-html-templates",
       "anthropic-skill-creator",
       "dbskill",
-      "doc",
       "eva",
       "frontend-design",
       "frontend-slides",
@@ -66,9 +60,7 @@
       "playwright-interactive",
       "screenshot",
       "skill-manager",
-      "slides",
       "speech",
-      "spreadsheet",
       "token-receipt",
       "transcribe",
       "vercel-deploy",
@@ -88,12 +80,10 @@
     },
     "claude": {
       "codex": [
-        "agent-browser",
         "aihot",
         "beautiful-html-templates",
         "anthropic-skill-creator",
         "dbskill",
-        "doc",
         "eva",
         "frontend-design",
         "frontend-slides",
@@ -106,9 +96,7 @@
         "playwright-interactive",
         "screenshot",
         "skill-manager",
-        "slides",
         "speech",
-        "spreadsheet",
         "token-receipt",
         "transcribe",
         "vercel-deploy",
@@ -125,12 +113,10 @@
     },
     "agents": {
       "codex": [
-        "agent-browser",
         "aihot",
         "beautiful-html-templates",
         "anthropic-skill-creator",
         "dbskill",
-        "doc",
         "eva",
         "frontend-design",
         "frontend-slides",
@@ -143,9 +129,7 @@
         "playwright-interactive",
         "screenshot",
         "skill-manager",
-        "slides",
         "speech",
-        "spreadsheet",
         "token-receipt",
         "transcribe",
         "vercel-deploy",
@@ -159,6 +143,17 @@
         "heytea-doodle-poster",
         "lark-suite"
       ]
+    }
+  },
+  "runtimeTargetOverrides": {
+    "codex": {
+      "heytea-doodle-poster": "/Users/cecilialiu/Documents/Codex/heytea-style"
+    },
+    "claude": {
+      "heytea-doodle-poster": "/Users/cecilialiu/Documents/Codex/heytea-style"
+    },
+    "agents": {
+      "heytea-doodle-poster": "/Users/cecilialiu/Documents/Codex/heytea-style"
     }
   },
   "preservedEntries": {

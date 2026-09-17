@@ -2,6 +2,7 @@
 .artifacts/
 .DS_Store
 .tmp-chatcut-unified-parent/
+.tmp-ins-photo-diary-demo/
 __pycache__/
 *.py[cod]
 viral_breakdowns/

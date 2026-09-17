@@ -1,0 +1,49 @@
+{
+  "expectations": [
+    {
+      "text": "一次只给一个小任务",
+      "passed": true,
+      "evidence": "先说一句"
+    },
+    {
+      "text": "照读不算独立回忆",
+      "passed": true,
+      "evidence": "照着读一遍就够了。\n\n## Assistant reply — turn 4\n\n很好，这次句子是正确的。因为你说明自己是照着示范读的，我会把它记作“看着答案完成”，还不能算独立"
+    },
+    {
+      "text": "次日先提取再显示答案",
+      "passed": true,
+      "evidence": "先不看答案"
+    },
+    {
+      "text": "文字转写不评价口音",
+      "passed": true,
+      "evidence": "只有转写文字时，我无法评价口音、重音、节奏或具体发音"
+    },
+    {
+      "text": "未把同内容回忆冒充跨情境迁移",
+      "passed": false,
+      "evidence": "未找到满足该断言的文本证据。"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": null,
+    "note": "执行接口未提供可持久化的真实耗时或 token；未估算。"
+  },
+  "user_notes_summary": {
+    "uncertainties": [
+      "脚本化回放只验证响应行为，不证明学习效果。"
+    ],
+    "needs_review": [
+      "请在官方查看页审阅自然度与教学负担。"
+    ],
+    "workarounds": []
+  }
+}

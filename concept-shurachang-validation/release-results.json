@@ -1,0 +1,14 @@
+{
+  "archive": "concept-shurachang-v0.1.0.zip",
+  "bytes": 8917,
+  "sha256": "05e47486f1ae9c19fde4ccc1315ba304b3275496aea94633dff7d6844cb94776",
+  "status": "PASS",
+  "members": [
+    "concept-shurachang/SKILL.md",
+    "concept-shurachang/agents/openai.yaml",
+    "concept-shurachang/references/cases.md",
+    "concept-shurachang/references/method.md"
+  ],
+  "tests_in_archive": false,
+  "unpacked_bytes_match": true
+}

@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "skill_name": "spoken-english",
+    "skill_path": "/Users/cecilialiu/Documents/Codex/Skills/spoken-english",
+    "executor_model": "Codex paired agents",
+    "analyzer_model": "deterministic regex grader",
+    "timestamp": "2026-09-16",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "foundation",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": null,
+        "tokens": null,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "一次只给一个小任务",
+          "passed": true,
+          "evidence": "只做一个小任务"
+        },
+        {
+          "text": "照读不算独立回忆",
+          "passed": true,
+          "evidence": "照着读一遍熟悉它。照读属于练习，不算已经能独立"
+        },
+        {
+          "text": "次日先提取再显示答案",
+          "passed": true,
+          "evidence": "先不看答案"
+        },
+        {
+          "text": "文字转写不评价口音",
+          "passed": true,
+          "evidence": "不能据此记为“跨天新情境迁移”。\n\n我不能根据这段转写评价你的口音"
+        },
+        {
+          "text": "未把同内容回忆冒充跨情境迁移",
+          "passed": true,
+          "evidence": "不能据此记为“跨天新情境迁移"
+        }
+      ],
+      "notes": [
+        "执行接口未提供可持久化的真实耗时或 token；未填充估算值。"
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "foundation",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": null,
+        "tokens": null,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "一次只给一个小任务",
+          "passed": true,
+          "evidence": "先说一句"
+        },
+        {
+          "text": "照读不算独立回忆",
+          "passed": true,
+          "evidence": "照着读一遍就够了。\n\n## Assistant reply — turn 4\n\n很好，这次句子是正确的。因为你说明自己是照着示范读的，我会把它记作“看着答案完成”，还不能算独立"
+        },
+        {
+          "text": "次日先提取再显示答案",
+          "passed": true,
+          "evidence": "先不看答案"
+        },
+        {
+          "text": "文字转写不评价口音",
+          "passed": true,
+          "evidence": "只有转写文字时，我无法评价口音、重音、节奏或具体发音"
+        },
+        {
+          "text": "未把同内容回忆冒充跨情境迁移",
+          "passed": false,
+          "evidence": "未找到满足该断言的文本证据。"
+        }
+      ],
+      "notes": [
+        "执行接口未提供可持久化的真实耗时或 token；未填充估算值。"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "complex",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": null,
+        "tokens": null,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "等待表达完成后反馈",
+          "passed": true,
+          "evidence": "说完之前我不"
+        },
+        {
+          "text": "反馈聚焦一个组织重点",
+          "passed": true,
+          "evidence": "先抓一个最影响清晰度的重点"
+        },
+        {
+          "text": "让学习者重试而非代写长稿",
+          "passed": true,
+          "evidence": "你自己的话"
+        },
+        {
+          "text": "提供未预演条件追问",
+          "passed": true,
+          "evidence": "没预演过"
+        },
+        {
+          "text": "报告区分延迟回忆和跨天迁移",
+          "passed": true,
+          "evidence": "不是跨天延迟回忆证据，也不能证明稳定迁移"
+        },
+        {
+          "text": "文字输入不评价声音",
+          "passed": true,
+          "evidence": "文字输入，我只评价意思、结构和可见语言，不评价口音或语速"
+        }
+      ],
+      "notes": [
+        "执行接口未提供可持久化的真实耗时或 token；未填充估算值。"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "complex",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6666666666666666,
+        "passed": 4,
+        "failed": 2,
+        "total": 6,
+        "time_seconds": null,
+        "tokens": null,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "等待表达完成后反馈",
+          "passed": true,
+          "evidence": "我等你说完"
+        },
+        {
+          "text": "反馈聚焦一个组织重点",
+          "passed": true,
+          "evidence": "主要问题"
+        },
+        {
+          "text": "让学习者重试而非代写长稿",
+          "passed": true,
+          "evidence": "不给成句"
+        },
+        {
+          "text": "提供未预演条件追问",
+          "passed": true,
+          "evidence": "没有预演过"
+        },
+        {
+          "text": "报告区分延迟回忆和跨天迁移",
+          "passed": false,
+          "evidence": "未找到满足该断言的文本证据。"
+        },
+        {
+          "text": "文字输入不评价声音",
+          "passed": false,
+          "evidence": "未找到满足该断言的文本证据。"
+        }
+      ],
+      "notes": [
+        "执行接口未提供可持久化的真实耗时或 token；未填充估算值。"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "mobile",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": null,
+        "tokens": null,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "明确无法访问电脑且手机不运行脚本",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "无正式模板时不自创可导入格式",
+          "passed": true,
+          "evidence": "缺少模板时，我只能先做可读暂存，不能自创可导入的数据结构。\n\n## 助手第2轮\n\n我先按你提供的事实做可读暂存，不生成自创"
+        },
+        {
+          "text": "保留首次失败和提示后复述",
+          "passed": true,
+          "evidence": "保留“忘记”这个首次结果；答案提示"
+        },
+        {
+          "text": "未做项目不算失败",
+          "passed": true,
+          "evidence": "没做的题不算失败"
+        },
+        {
+          "text": "同ID异内容整批冲突",
+          "passed": true,
+          "evidence": "同 ID、相同规范化内容重复出现，只去重一次，不新增事件。\n3. 同一个 ID 一份写“失败”、另一份改成“成功”，属于同 ID 异内容冲突。整个批次都应拒绝"
+        },
+        {
+          "text": "乱序按真实时间重放",
+          "passed": true,
+          "evidence": "按实际发生时间和事件 ID 确定性重放"
+        },
+        {
+          "text": "旧快照不覆盖历史",
+          "passed": true,
+          "evidence": "不能用旧包覆盖电脑。旧包里的复习日期过时是正常的：手机只能暂按旧队列和近期失败项练；回电脑后应把有效记录导入现有历史，让电脑按真实时序重新计算，再导出一个新包。旧包可以留作档案，但不能覆盖"
+        },
+        {
+          "text": "模糊时间不猜测",
+          "passed": true,
+          "evidence": "不能随便补"
+        }
+      ],
+      "notes": [
+        "执行接口未提供可持久化的真实耗时或 token；未填充估算值。"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "mobile",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "total": 8,
+        "time_seconds": null,
+        "tokens": null,
+        "tool_calls": null,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "明确无法访问电脑且手机不运行脚本",
+          "passed": false,
+          "evidence": "未找到满足该断言的文本证据。"
+        },
+        {
+          "text": "无正式模板时不自创可导入格式",
+          "passed": false,
+          "evidence": "未找到满足该断言的文本证据。"
+        },
+        {
+          "text": "保留首次失败和提示后复述",
+          "passed": true,
+          "evidence": "保留“独立回想失败”和“看答案后说出”，这样不会把提示"
+        },
+        {
+          "text": "未做项目不算失败",
+          "passed": false,
+          "evidence": "未找到满足该断言的文本证据。"
+        },
+        {
+          "text": "同ID异内容整批冲突",
+          "passed": false,
+          "evidence": "未找到满足该断言的文本证据。"
+        },
+        {
+          "text": "乱序按真实时间重放",
+          "passed": true,
+          "evidence": "排序时看事件时间"
+        },
+        {
+          "text": "旧快照不覆盖历史",
+          "passed": true,
+          "evidence": "不建议让旧包整包覆盖"
+        },
+        {
+          "text": "模糊时间不猜测",
+          "passed": true,
+          "evidence": "不能随便补"
+        }
+      ],
+      "notes": [
+        "执行接口未提供可持久化的真实耗时或 token；未填充估算值。"
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": null,
+        "stddev": null
+      },
+      "tokens": {
+        "mean": null,
+        "stddev": null
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.6555555555555556,
+        "stddev": 0.12272623352430291,
+        "min": 0.5,
+        "max": 0.8
+      },
+      "time_seconds": {
+        "mean": null,
+        "stddev": null
+      },
+      "tokens": {
+        "mean": null,
+        "stddev": null
+      }
+    },
+    "delta": {
+      "pass_rate": 0.34444444444444444,
+      "time_seconds": null,
+      "tokens": null
+    }
+  },
+  "notes": [
+    "差异主要来自结构化报告与手机协议；基础教学行为的基线已较强。",
+    "单次脚本化样本不估计方差，也不证明学习效果。",
+    "执行代理返回时触发用量限制，真实耗时与 token 记为 null。"
+  ]
+}

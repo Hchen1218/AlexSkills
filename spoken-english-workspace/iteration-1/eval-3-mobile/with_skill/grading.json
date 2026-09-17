@@ -1,0 +1,64 @@
+{
+  "expectations": [
+    {
+      "text": "明确无法访问电脑且手机不运行脚本",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "无正式模板时不自创可导入格式",
+      "passed": true,
+      "evidence": "缺少模板时，我只能先做可读暂存，不能自创可导入的数据结构。\n\n## 助手第2轮\n\n我先按你提供的事实做可读暂存，不生成自创"
+    },
+    {
+      "text": "保留首次失败和提示后复述",
+      "passed": true,
+      "evidence": "保留“忘记”这个首次结果；答案提示"
+    },
+    {
+      "text": "未做项目不算失败",
+      "passed": true,
+      "evidence": "没做的题不算失败"
+    },
+    {
+      "text": "同ID异内容整批冲突",
+      "passed": true,
+      "evidence": "同 ID、相同规范化内容重复出现，只去重一次，不新增事件。\n3. 同一个 ID 一份写“失败”、另一份改成“成功”，属于同 ID 异内容冲突。整个批次都应拒绝"
+    },
+    {
+      "text": "乱序按真实时间重放",
+      "passed": true,
+      "evidence": "按实际发生时间和事件 ID 确定性重放"
+    },
+    {
+      "text": "旧快照不覆盖历史",
+      "passed": true,
+      "evidence": "不能用旧包覆盖电脑。旧包里的复习日期过时是正常的：手机只能暂按旧队列和近期失败项练；回电脑后应把有效记录导入现有历史，让电脑按真实时序重新计算，再导出一个新包。旧包可以留作档案，但不能覆盖"
+    },
+    {
+      "text": "模糊时间不猜测",
+      "passed": true,
+      "evidence": "不能随便补"
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": null,
+    "note": "执行接口未提供可持久化的真实耗时或 token；未估算。"
+  },
+  "user_notes_summary": {
+    "uncertainties": [
+      "脚本化回放只验证响应行为，不证明学习效果。"
+    ],
+    "needs_review": [
+      "请在官方查看页审阅自然度与教学负担。"
+    ],
+    "workarounds": []
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "check": "SKILL.md -> references/originals.md",
+    "passed": true
+  },
+  {
+    "check": "SKILL.md -> references/templates.md",
+    "passed": true
+  },
+  {
+    "check": "SKILL.md -> references/voice.md",
+    "passed": true
+  },
+  {
+    "check": "SKILL.md -> references/method.md",
+    "passed": true
+  },
+  {
+    "check": "SKILL.md -> references/methodology-original.md",
+    "passed": true
+  },
+  {
+    "check": "SKILL.md -> references/source-notes.md",
+    "passed": true
+  },
+  {
+    "check": "SKILL.md -> references/cases.md",
+    "passed": true
+  },
+  {
+    "check": "SKILL.md 无个人绝对路径",
+    "passed": true
+  },
+  {
+    "check": "references/method.md 无个人绝对路径",
+    "passed": true
+  },
+  {
+    "check": "references/templates.md -> ../SKILL.md",
+    "passed": true
+  },
+  {
+    "check": "references/templates.md -> originals.md",
+    "passed": true
+  },
+  {
+    "check": "references/templates.md -> source-notes.md",
+    "passed": true
+  },
+  {
+    "check": "references/templates.md 无个人绝对路径",
+    "passed": true
+  },
+  {
+    "check": "references/voice.md 无个人绝对路径",
+    "passed": true
+  },
+  {
+    "check": "references/originals.md -> source-notes.md",
+    "passed": true
+  },
+  {
+    "check": "references/originals.md -> ../SKILL.md",
+    "passed": true
+  },
+  {
+    "check": "references/originals.md 无个人绝对路径",
+    "passed": true
+  },
+  {
+    "check": "references/methodology-original.md -> source-notes.md",
+    "passed": true
+  },
+  {
+    "check": "references/methodology-original.md -> ../SKILL.md",
+    "passed": true
+  },
+  {
+    "check": "references/methodology-original.md 无个人绝对路径",
+    "passed": true
+  },
+  {
+    "check": "references/cases.md 无个人绝对路径",
+    "passed": true
+  },
+  {
+    "check": "references/source-notes.md -> originals.md",
+    "passed": true
+  },
+  {
+    "check": "references/source-notes.md -> templates.md",
+    "passed": true
+  },
+  {
+    "check": "references/source-notes.md -> methodology-original.md",
+    "passed": true
+  },
+  {
+    "check": "references/source-notes.md 无个人绝对路径",
+    "passed": true
+  },
+  {
+    "check": "SKILL.md 不超过500行",
+    "passed": true
+  },
+  {
+    "check": "必要资源 originals.md",
+    "passed": true
+  },
+  {
+    "check": "必要资源 templates.md",
+    "passed": true
+  },
+  {
+    "check": "必要资源 voice.md",
+    "passed": true
+  },
+  {
+    "check": "必要资源 source-notes.md",
+    "passed": true
+  }
+]

@@ -1,5 +1,7 @@
 .cleanup-backups/
 .artifacts/
+.DS_Store
+.tmp-chatcut-unified-parent/
 __pycache__/
 *.py[cod]
 viral_breakdowns/

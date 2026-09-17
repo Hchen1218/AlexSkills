@@ -1,0 +1,26 @@
+{
+  "skill_name": "spoken-english",
+  "evals": [
+    {
+      "id": 1,
+      "name": "foundation",
+      "prompt": "按顺序回应下面固定用户轮次。每轮输出助手回应；不得替用户添加答案。这是离线多轮回放，不是真实学习成效测试。\n用户第1轮：我多年没说英语，想旅行时能开口。喜欢咖啡，每天10分钟，温和纠错。请开始，先别一次给我很多任务。\n用户第2轮：I like coffee. Yesterday I go cafe. 因为安静，但我不知道怎么说。\n用户第3轮：请给我一句示范。\n用户第4轮：I went to a café because it was quiet. 我是照着你刚才的示范读的，现在要停。\n用户第5轮：现在是次日，同样咖啡主题，先不要告诉我答案，检查昨天的表达。\n用户第6轮：I went to a café because it was quiet. 这是我自己想出来的。只有这段转写，请评价我口音。",
+      "expected_output": "逐轮教学回应与诚实证据边界，记录可用性说明。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "complex",
+      "prompt": "按顺序回应下面固定用户轮次。每轮输出助手回应；不得替用户添加答案。这是离线多轮回放，不是真实学习成效测试。\n用户第1轮：我可以日常聊天，但项目延期的原因和取舍说不清。15分钟，等我说完再点评，帮我练复杂表达。\n用户第2轮：The launch was late because testing failed but sales wanted Friday and we had two options, remove the feature or delay, I think delay because customers trust matters. 我说完了。\n用户第3轮：别直接替我写长稿。让我自己说一次因果和取舍。\n用户第4轮：We delayed the launch because tests failed. Although sales wanted Friday, we chose reliability over speed. 请换个没预演过的问题。\n用户第5轮：If the issue only affects one customer, I would consider a limited release, provided we can warn them. 今天只有文字输入，帮我总结。",
+      "expected_output": "逐轮教学回应与诚实证据边界，记录可用性说明。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "mobile",
+      "prompt": "按顺序回应下面固定用户轮次。每轮输出助手回应；不得替用户添加答案。这是离线多轮回放，不是真实学习成效测试。\n用户第1轮：我在手机ChatGPT练习，想同一聊天连续两次、第二次中断，稍后一次性回传电脑。我没有运行Python能力。请告诉我开始需要什么，不要声称访问我电脑。\n用户第2轮：假设已收到进度包包ID demo-pack，学习者 demo，队列 c1，未携带机器记录模板。第一次2026-09-16T09:00:00+08:00，我忘了表达，看到答案才说出 I would rather wait. 第二次2026-09-17T09:00:00+08:00，我独立说出 I would rather wait，随后中断；其他题未做。请先保留记录。\n用户第3轮：回电脑时我把第二次放前面，第一次放后面，并重复第一次，还把其中一个重复事件结果从失败改成成功但保留同ID。请解释应该怎么同步，不能丢失败。\n用户第4轮：旧包的复习日期已经过时，能否用旧包覆盖电脑？第二次其实是“昨天早上”，我记不清时区，可以随便补时间吗？",
+      "expected_output": "逐轮教学回应与诚实证据边界，记录可用性说明。",
+      "files": []
+    }
+  ]
+}

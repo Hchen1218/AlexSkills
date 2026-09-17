@@ -1,0 +1,14 @@
+[
+  {
+    "query": "只翻译：会议推迟到周五。不要训练。",
+    "should_trigger": false
+  },
+  {
+    "query": "rather 在 would rather 里面是什么意思？只讲词义。",
+    "should_trigger": false
+  },
+  {
+    "query": "讨论二语习得里显性知识与隐性知识区别，不要给我上口语课。",
+    "should_trigger": false
+  }
+]

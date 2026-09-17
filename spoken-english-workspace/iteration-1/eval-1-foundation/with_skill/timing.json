@@ -1,0 +1,5 @@
+{
+  "total_tokens": null,
+  "duration_ms": null,
+  "note": "执行接口未提供可持久化的真实耗时或 token；未估算。"
+}

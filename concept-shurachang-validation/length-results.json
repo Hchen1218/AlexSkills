@@ -1,0 +1,42 @@
+[
+  {
+    "file": "baseline/ai_context.md",
+    "chinese_characters": 312,
+    "method": "Chinese characters in narration; excludes English, punctuation and card"
+  },
+  {
+    "file": "baseline/ai_context.strong.md",
+    "chinese_characters": 350,
+    "method": "Chinese characters in narration; excludes English, punctuation and card"
+  },
+  {
+    "file": "baseline/economics.md",
+    "chinese_characters": 306,
+    "method": "Chinese characters in narration; excludes English, punctuation and card"
+  },
+  {
+    "file": "baseline/economics.strong.md",
+    "chinese_characters": 341,
+    "method": "Chinese characters in narration; excludes English, punctuation and card"
+  },
+  {
+    "file": "with-skill/ai_context.md",
+    "chinese_characters": 187,
+    "method": "Chinese characters in narration; excludes English, punctuation and card"
+  },
+  {
+    "file": "with-skill/ai_context.strong.md",
+    "chinese_characters": 163,
+    "method": "Chinese characters in narration; excludes English, punctuation and card"
+  },
+  {
+    "file": "with-skill/economics.md",
+    "chinese_characters": 153,
+    "method": "Chinese characters in narration; excludes English, punctuation and card"
+  },
+  {
+    "file": "with-skill/economics.strong.md",
+    "chinese_characters": 138,
+    "method": "Chinese characters in narration; excludes English, punctuation and card"
+  }
+]

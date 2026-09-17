@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "extracts": [
+    {
+      "title": "什么是 AI 大模型蒸馏",
+      "passed": true
+    },
+    {
+      "title": "20s 速通 vibe coding 到底是什么",
+      "passed": true
+    },
+    {
+      "title": "20s 速通系列 Harness Engineering 是什么",
+      "passed": true
+    },
+    {
+      "title": "20s 速通 Claude Code 最新功能！",
+      "passed": true
+    },
+    {
+      "title": "20s 速通 Claude Code 最新功能 part.2",
+      "passed": true
+    },
+    {
+      "title": "20s 搞清楚 LLM Context Rot 是什么！",
+      "passed": true
+    },
+    {
+      "title": "20s 搞清楚 LLM Anchoring Bias 是什么！",
+      "passed": true
+    },
+    {
+      "title": "20s 搞清楚 LLM Reward Haking 是什么！",
+      "passed": true
+    },
+    {
+      "title": "AI 幻觉",
+      "passed": true
+    },
+    {
+      "title": "原稿的固定骨架",
+      "passed": true
+    },
+    {
+      "title": "原稿里的 10 种概念诠释方法",
+      "passed": true
+    },
+    {
+      "title": "必须抄的，不是题材，是句法",
+      "passed": true
+    },
+    {
+      "title": "原稿的表达形式",
+      "passed": true
+    },
+    {
+      "title": "原稿里最常用的 10 种分型模板",
+      "passed": true
+    },
+    {
+      "title": "AI 概念映射示例",
+      "passed": true
+    },
+    {
+      "title": "派生适配型：规则约束型",
+      "passed": true
+    },
+    {
+      "title": "不要这样写",
+      "passed": true
+    },
+    {
+      "title": "质量检查",
+      "passed": true
+    },
+    {
+      "title": "2. 核心公式：两次映射",
+      "passed": true
+    },
+    {
+      "title": "3. 关系几何与主体结构",
+      "passed": true
+    },
+    {
+      "title": "4. 七步写作流程",
+      "passed": true
+    }
+  ],
+  "checks": [
+    "Exact SHA-256 on source substring",
+    "Exact destination substring inclusion",
+    "All local Markdown links resolve",
+    "No personal absolute paths in four resource files"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "expectations": [
+    {
+      "text": "等待表达完成后反馈",
+      "passed": true,
+      "evidence": "我等你说完"
+    },
+    {
+      "text": "反馈聚焦一个组织重点",
+      "passed": true,
+      "evidence": "主要问题"
+    },
+    {
+      "text": "让学习者重试而非代写长稿",
+      "passed": true,
+      "evidence": "不给成句"
+    },
+    {
+      "text": "提供未预演条件追问",
+      "passed": true,
+      "evidence": "没有预演过"
+    },
+    {
+      "text": "报告区分延迟回忆和跨天迁移",
+      "passed": false,
+      "evidence": "未找到满足该断言的文本证据。"
+    },
+    {
+      "text": "文字输入不评价声音",
+      "passed": false,
+      "evidence": "未找到满足该断言的文本证据。"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 2,
+    "total": 6,
+    "pass_rate": 0.6666666666666666
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": null,
+    "note": "执行接口未提供可持久化的真实耗时或 token；未估算。"
+  },
+  "user_notes_summary": {
+    "uncertainties": [
+      "脚本化回放只验证响应行为，不证明学习效果。"
+    ],
+    "needs_review": [
+      "请在官方查看页审阅自然度与教学负担。"
+    ],
+    "workarounds": []
+  }
+}

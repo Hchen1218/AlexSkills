@@ -1,0 +1,13 @@
+{
+  "eval_id": 2,
+  "eval_name": "complex",
+  "prompt": "按顺序回应下面固定用户轮次。每轮输出助手回应；不得替用户添加答案。这是离线多轮回放，不是真实学习成效测试。\n用户第1轮：我可以日常聊天，但项目延期的原因和取舍说不清。15分钟，等我说完再点评，帮我练复杂表达。\n用户第2轮：The launch was late because testing failed but sales wanted Friday and we had two options, remove the feature or delay, I think delay because customers trust matters. 我说完了。\n用户第3轮：别直接替我写长稿。让我自己说一次因果和取舍。\n用户第4轮：We delayed the launch because tests failed. Although sales wanted Friday, we chose reliability over speed. 请换个没预演过的问题。\n用户第5轮：If the issue only affects one customer, I would consider a limited release, provided we can warn them. 今天只有文字输入，帮我总结。",
+  "assertions": [
+    "等待表达完成后反馈",
+    "反馈聚焦一个组织重点",
+    "让学习者重试而非代写长稿",
+    "提供未预演条件追问",
+    "报告区分延迟回忆和跨天迁移",
+    "文字输入不评价声音"
+  ]
+}

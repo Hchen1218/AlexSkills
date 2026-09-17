@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "skill_name": "concept-shurachang",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "Codex subagents (inherited model)",
+    "analyzer_model": "Codex main agent",
+    "timestamp": "2026-09-14T14:06:34Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "expectations": [
+        {
+          "text": "故事包含用户先表达偏好、朋友迎合、由此采取行动和关系结果",
+          "passed": true,
+          "evidence": "用户先问不吃身材这套，Jason顺着说，用户于是嘲讽Leo，Grace让其回去。"
+        },
+        {
+          "text": "正文解释谄媚的偏好／奖励机制及偏离事实的后果，不保证必然出现",
+          "passed": true,
+          "evidence": "解释偏好训练可能奖励答案及牺牲真实性，并非必然。"
+        },
+        {
+          "text": "正文不超过240汉字，故事先于概念揭晓",
+          "passed": true,
+          "evidence": "实际汉字数185；关系叙述在概念揭晓前。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6666666666666666,
+        "passed": 2,
+        "failed": 1,
+        "total": 3
+      },
+      "expectations": [
+        {
+          "text": "故事包含用户先表达偏好、朋友迎合、由此采取行动和关系结果",
+          "passed": false,
+          "evidence": "听完很爽后直到她又夸一次，未写受迎合影响采取的行动及关系后果。"
+        },
+        {
+          "text": "正文解释谄媚的偏好／奖励机制及偏离事实的后果，不保证必然出现",
+          "passed": true,
+          "evidence": "明确偏好训练可能奖励讨喜回答，而非所有模型每次如此。"
+        },
+        {
+          "text": "正文不超过240汉字，故事先于概念揭晓",
+          "passed": true,
+          "evidence": "实际汉字数183；关系叙述在概念揭晓前。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "expectations": [
+        {
+          "text": "不把独立事件误说成互斥，交代独立成立的条件",
+          "passed": true,
+          "evidence": "明确独立是条件概率不变，互斥是不能同时发生。"
+        },
+        {
+          "text": "关系故事中的随机独立性有明确设定，而非假定现实感情独立",
+          "passed": true,
+          "evidence": "两枚公平硬币互不干扰且不根据对方结果改规则。"
+        },
+        {
+          "text": "正文不超过240汉字，故事先于概念揭晓",
+          "passed": true,
+          "evidence": "实际汉字数229；关系叙述在概念揭晓前。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "expectations": [
+        {
+          "text": "不把独立事件误说成互斥，交代独立成立的条件",
+          "passed": true,
+          "evidence": "解释概率相乘、已知自身结果另一仍一半，独立不等于互斥。"
+        },
+        {
+          "text": "关系故事中的随机独立性有明确设定，而非假定现实感情独立",
+          "passed": true,
+          "evidence": "设定两枚公平硬币结果互不影响，明确并非心意独立。"
+        },
+        {
+          "text": "正文不超过240汉字，故事先于概念揭晓",
+          "passed": true,
+          "evidence": "实际汉字数231；关系叙述在概念揭晓前。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "expectations": [
+        {
+          "text": "只给候选而未提前输出完整口播",
+          "passed": true,
+          "evidence": "只给三方向与推荐，结尾等待选定。"
+        },
+        {
+          "text": "候选使用关系承诺的期限与履约需求，未直接以借贷还款演金融",
+          "passed": true,
+          "evidence": "以每周承诺与长期安排、可用时间与约会需求表现期限，无借款还款。"
+        },
+        {
+          "text": "候选明确对应机制、易失真处和推荐理由，结构有实质差异",
+          "passed": true,
+          "evidence": "新版分为两方滚动续接、第三方支持依赖、多项承诺集中到期，各有对应和边界。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "expectations": [
+        {
+          "text": "只给候选而未提前输出完整口播",
+          "passed": true,
+          "evidence": "只给三方向与推荐，结尾等待选定。"
+        },
+        {
+          "text": "候选使用关系承诺的期限与履约需求，未直接以借贷还款演金融",
+          "passed": true,
+          "evidence": "以每周承诺与长期安排、可用时间与约会需求表现期限，无借款还款。"
+        },
+        {
+          "text": "候选明确对应机制、易失真处和推荐理由，结构有实质差异",
+          "passed": true,
+          "evidence": "三个方向分别使用可撤回承诺、旧安排延迟释放、未来集中空闲；均有映射和失真说明，但都偏重未来无法兑现眼前需求，差异强度需人评。"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "old_skill": {
+      "pass_rate": {
+        "mean": 0.8889,
+        "stddev": 0.1925,
+        "min": 0.6667,
+        "max": 1.0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.11"
+    }
+  },
+  "notes": [
+    "仅3题各一次，检查项主要验证机制、因果与字数；100%不是文案质量总分或稳定成功率。",
+    "新版谄媚稿出现受迎合影响的行动和关系后果，旧版缺少该因果；新版解释仍有“你的判断对应”的分析口吻，需用户评阅。",
+    "概率题两版都以抛硬币保证独立性，条件准确但关系故事的自然度未被本组检查证明。",
+    "没有真实token统计，已移除汇总脚本产生的0值；单题wall计时只含起草落盘，口径不等于完整运行耗时，故不作对比。",
+    "新版代理结束通知为用量限制；核对发现3题答案、执行摘要和计时均已保存。没有由主代理补写测试输出。",
+    "同一配置的3题共用一个无会话历史的子代理上下文；不同配置隔离，未读取彼此输出。"
+  ]
+}

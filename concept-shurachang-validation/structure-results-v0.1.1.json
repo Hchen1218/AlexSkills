@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    "package allowlist",
+    "no local dependencies/placeholders",
+    "relative references",
+    "entry and UI invocation"
+  ],
+  "files": {
+    "SKILL.md": {
+      "bytes": 6018,
+      "sha256": "867817b67f7274148795fc889de22b711ed38377cc8aaf89fb8dad68d424d6db"
+    },
+    "agents/openai.yaml": {
+      "bytes": 311,
+      "sha256": "500a3d3a1d2e8dab5414472949e26e88f0e83e5c4d937d702429bcf8ea07299e"
+    },
+    "references/cases.md": {
+      "bytes": 3418,
+      "sha256": "da7c79f28b96fc0a544ac7e7fa252af1127dbff0eb8feb6fb7c4309ef81314bc"
+    },
+    "references/method.md": {
+      "bytes": 6154,
+      "sha256": "c22aac69882dac66c4359737124b069c0f2777d4a99a713f6f212a71c66aa038"
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,195 @@
+{
+  "source_root_label": "ai-content（仅制作时读取）",
+  "extraction": "Exact UTF-8 substrings; no punctuation or whitespace normalization inside extracts.",
+  "records": [
+    {
+      "kind": "original",
+      "title": "什么是 AI 大模型蒸馏",
+      "source": "01-内容生产/选题管理/03-已发布选题/20260415-什么是AI大模型蒸馏.md",
+      "start_line": 65,
+      "end_line": 65,
+      "sha256": "58b5556ea417b50928e71c86a158fab454ff65593bcd99f7f8e320d8dbbf7dfd",
+      "characters": 153
+    },
+    {
+      "kind": "original",
+      "title": "20s 速通 vibe coding 到底是什么",
+      "source": "01-内容生产/选题管理/03-已发布选题/20260422-20s速通vibecoding到底是什么.md",
+      "start_line": 84,
+      "end_line": 86,
+      "sha256": "77ad5209801a97c66838aaae6272c777206f777df139a3bf8f17892b34be4d35",
+      "characters": 237
+    },
+    {
+      "kind": "original",
+      "title": "20s 速通系列 Harness Engineering 是什么",
+      "source": "01-内容生产/选题管理/03-已发布选题/20260515-20s速通系列HarnessEngineering是什么.md",
+      "start_line": 65,
+      "end_line": 71,
+      "sha256": "e15f0872fa22a5ddff520ed37708411520dbb0ffc5f70f3d625f6555a60e3b53",
+      "characters": 320
+    },
+    {
+      "kind": "original",
+      "title": "20s 速通 Claude Code 最新功能！",
+      "source": "01-内容生产/选题管理/03-已发布选题/20260613-20s速通ClaudeCode最新功能.md",
+      "start_line": 86,
+      "end_line": 86,
+      "sha256": "060ab0f299dd7cdbe44f9e7d03a989ee9a1199a093dc763264187645679d3551",
+      "characters": 245
+    },
+    {
+      "kind": "original",
+      "title": "20s 速通 Claude Code 最新功能 part.2",
+      "source": "01-内容生产/选题管理/03-已发布选题/20260615-20s速通ClaudeCode最新功能part.2.md",
+      "start_line": 41,
+      "end_line": 41,
+      "sha256": "91dfeb5f885d6def25e10dde81034b1f9a308cb7c0280decf3c797772d72d130",
+      "characters": 255
+    },
+    {
+      "kind": "original",
+      "title": "20s 搞清楚 LLM Context Rot 是什么！",
+      "source": "01-内容生产/选题管理/03-已发布选题/20260706-20s搞清楚LLMContextRot是什么.md",
+      "start_line": 79,
+      "end_line": 79,
+      "sha256": "e060990d55c7817d31ec18e4b364efc2da8564acc120d99dac7979ba70a32196",
+      "characters": 223
+    },
+    {
+      "kind": "original",
+      "title": "20s 搞清楚 LLM Anchoring Bias 是什么！",
+      "source": "01-内容生产/选题管理/03-已发布选题/20260807-20s搞清楚LLMAnchoringBias是什么.md",
+      "start_line": 77,
+      "end_line": 77,
+      "sha256": "aa1a9310f4ce36aff3502a6ff50a68d031b0817f82c0ee7e57fb41fbd9414f1f",
+      "characters": 185
+    },
+    {
+      "kind": "original",
+      "title": "20s 搞清楚 LLM Reward Haking 是什么！",
+      "source": "01-内容生产/选题管理/03-已发布选题/20260823-20s搞清楚LLMRewardHaking是什么.md",
+      "start_line": 77,
+      "end_line": 77,
+      "sha256": "83c2a66386119b03f2582b9b3145b9c27e3829ecfd56f8adc4eeccc967a35ea5",
+      "characters": 192
+    },
+    {
+      "kind": "original",
+      "title": "AI 幻觉",
+      "source": "01-内容生产/方法论/AI现象关系映射口播方法论.md",
+      "start_line": 274,
+      "end_line": 274,
+      "sha256": "4ce59b4a575a7cf9cd80a4827edefcf409eead0b01994674db207ed2544790ba",
+      "characters": 304
+    },
+    {
+      "kind": "template",
+      "title": "原稿的固定骨架",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 48,
+      "end_line": 77,
+      "sha256": "21142ebb76b3aa49ae7182b7b3cf90e6b22ec6102429def0ba65f9999d383331",
+      "characters": 338
+    },
+    {
+      "kind": "template",
+      "title": "原稿里的 10 种概念诠释方法",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 79,
+      "end_line": 102,
+      "sha256": "1e153e4278ed85fc02dcec85f10df78dd6d379c08261d23fec97196196f0ebad",
+      "characters": 784
+    },
+    {
+      "kind": "template",
+      "title": "必须抄的，不是题材，是句法",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 104,
+      "end_line": 183,
+      "sha256": "4cca9cfba35d8af867ea159c3ac2ceabfef724f0aecc9cc2f09debe703ef8620",
+      "characters": 749
+    },
+    {
+      "kind": "template",
+      "title": "原稿的表达形式",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 185,
+      "end_line": 226,
+      "sha256": "f87760cdd163a1f01ee4b0b1fa742650ddb6262b0b8e55c39364675d5873bc8a",
+      "characters": 349
+    },
+    {
+      "kind": "template",
+      "title": "原稿里最常用的 10 种分型模板",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 228,
+      "end_line": 456,
+      "sha256": "61a3b8ed3474f53255ec1f4e1ce8e18a310f70e2246e58ffe4317d6eeae75978",
+      "characters": 1903
+    },
+    {
+      "kind": "template",
+      "title": "AI 概念映射示例",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 458,
+      "end_line": 474,
+      "sha256": "bf58abc971301d4181694cd126cf6f0d8a504ac0ebd2ecf96f9d3aadb3dfc7db",
+      "characters": 453
+    },
+    {
+      "kind": "template",
+      "title": "派生适配型：规则约束型",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 476,
+      "end_line": 503,
+      "sha256": "de45fd5e30ebc9f3d598d86b38c3130d911536ecd666d210dfc29dc701426d9a",
+      "characters": 370
+    },
+    {
+      "kind": "template",
+      "title": "不要这样写",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 533,
+      "end_line": 548,
+      "sha256": "8ea13497154ae59cc4cbe97a0aba33ce9405b95c67577b10d2c9f994d8c6d39d",
+      "characters": 154
+    },
+    {
+      "kind": "template",
+      "title": "质量检查",
+      "source": "01-内容生产/方法论/AI概念-关系修罗场口播模板.md",
+      "start_line": 550,
+      "end_line": 562,
+      "sha256": "dea688ed3a0bc2b2f7d2cf34c019e7ac602b9f96bcc7bf6cd11a1dc119927da0",
+      "characters": 194
+    },
+    {
+      "kind": "methodology",
+      "title": "2. 核心公式：两次映射",
+      "source": "01-内容生产/方法论/AI现象关系映射口播方法论.md",
+      "start_line": 32,
+      "end_line": 60,
+      "sha256": "31495d6fe07434fcd18352e94b520ebef47de5dab4902a4f79e4df4f38ac6277",
+      "characters": 474
+    },
+    {
+      "kind": "methodology",
+      "title": "3. 关系几何与主体结构",
+      "source": "01-内容生产/方法论/AI现象关系映射口播方法论.md",
+      "start_line": 62,
+      "end_line": 179,
+      "sha256": "829aae3c0c9f27b2139b63e5bd000667b8585a370fa5de71619c6a6990eb5f52",
+      "characters": 2397
+    },
+    {
+      "kind": "methodology",
+      "title": "4. 七步写作流程",
+      "source": "01-内容生产/方法论/AI现象关系映射口播方法论.md",
+      "start_line": 181,
+      "end_line": 229,
+      "sha256": "00c99b3fc030d2838c982d23bf04167bcd336032e5f38ffe14689a3810e00fbd",
+      "characters": 850
+    }
+  ]
+}

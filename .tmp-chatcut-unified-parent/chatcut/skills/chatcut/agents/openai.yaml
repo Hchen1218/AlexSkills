@@ -1,0 +1,15 @@
+interface:
+  display_name: "ChatCut"
+  short_description: "One unified entry for complete ChatCut video workflows"
+  default_prompt: "Use $chatcut to open a project and help me create or edit a video."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "chatcut"
+      description: "Official ChatCut MCP server"
+      transport: "streamable_http"
+      url: "https://api.chatcut.io/api/external-mcp/mcp"
+
+policy:
+  allow_implicit_invocation: true

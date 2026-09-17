@@ -39,7 +39,8 @@
       "douyin-focus-shuttle",
       "heytea-doodle-poster",
       "lark-suite",
-      "skill-evolution-manager"
+      "skill-evolution-manager",
+      "spoken-english"
     ]
   },
   "directEntries": {
@@ -75,7 +76,8 @@
       "repo": [
         "douyin-focus-shuttle",
         "heytea-doodle-poster",
-        "lark-suite"
+        "lark-suite",
+        "spoken-english"
       ]
     },
     "claude": {
